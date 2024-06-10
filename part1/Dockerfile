@@ -14,5 +14,5 @@ COPY script.sh .
 # Alternatively, if we skipped chmod earlier, we can add execution permissions during the build.
 RUN chmod +x script.sh
 
-# When running docker run the command will be ./hello.sh
+# When running docker run the command will be ./script.sh
 CMD ./script.sh
