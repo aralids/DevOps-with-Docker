@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+
+  webs:
+    image: devopsdockeruh/simple-web-service
+    build: .
+    ports:
+      - 127.0.0.1:4444:8080
+    container_name: webs
+    command: server
